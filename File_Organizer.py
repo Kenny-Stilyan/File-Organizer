@@ -20,6 +20,7 @@ file_extensions = \
     "doc" : "Documents",
     "docx": "Documents",
     "txt" : "Documents",
+    "rtf" : "Documents",
     "csv" : "Data",
     "xlsx": "Data",
     "zip" : "Archives",
@@ -96,7 +97,7 @@ def organize_files():
 root = tk.Tk()
 root.title("File Organizer")
 root.geometry("300x40")
-root.iconbitmap("icon.ico")
+root.iconbitmap("D:/Programming/File-Organizer/icon.ico")
 root.configure(bg=BACKGROUND_COLOR)
 root.resizable(False, False)
 root.eval("tk::PlaceWindow . center")
