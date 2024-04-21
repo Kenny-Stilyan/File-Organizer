@@ -17,6 +17,7 @@ file_extensions = \
     "jpg" : "Images",
     "jpeg": "Images",
     "gif" : "Images",
+    "avif" : "Images",
     "doc" : "Documents",
     "docx": "Documents",
     "txt" : "Documents",
@@ -27,9 +28,13 @@ file_extensions = \
     "7z"  : "Archives",
     "rar" : "Archives",
     "exe" : "Executables",
+    "bin" : "Executables",
+    "msi" : "Executables",
+    "appinstaller" : "Executables",
     "mp3" : "Music",
     "wav" : "Music",
     "mp4" : "Videos",
+    "m4a" : "Videos",
     "avi" : "Videos",
     "flv" : "Videos",
     "wmv" : "Videos",
@@ -39,6 +44,7 @@ file_extensions = \
     "css" : "Web",
     "js"  : "Web",
     "py"  : "Python Files",
+    "pyc"  : "Python Files",
     "java": "Java Files",
     "c"   : "C Files",
     "cpp" : "C++ Files",
@@ -61,6 +67,11 @@ file_extensions = \
     "iso" : "ISO Files",
     "ico" : "Icon Files",
     "torrent": "Torrent Files",
+    "schematic": "Schematic Files",
+    "schem": "Schematic Files",
+    "apk": "Apk Files",
+    "sql": "SQL Files",
+    "drawio": "DrawIO Files",
 }
 
 def organize_files():
@@ -97,7 +108,7 @@ def organize_files():
 root = tk.Tk()
 root.title("File Organizer")
 root.geometry("300x40")
-root.iconbitmap("D:/Programming/File-Organizer/icon.ico")
+root.iconbitmap("/Programming/File-Organizer/icon.ico")
 root.configure(bg=BACKGROUND_COLOR)
 root.resizable(False, False)
 root.eval("tk::PlaceWindow . center")
